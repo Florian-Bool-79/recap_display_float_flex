@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout flex</title>
+
+    <style type="text/css">
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;            
+        }
+
+        header {
+            height:50px;
+            background-color: yellow;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+        footer {
+            height:100px;
+            background-color: red;
+            display: flex;
+            align-items: center;    
+            justify-content: center;        
+        }   
+        
+        header, footer {
+            padding: 10px;
+        }
+
+        main {
+            background-color: green;
+            height: calc(100vh - 50px - 100px);
+            display: flex;
+            flex-wrap: wrap;
+            overflow: auto;
+        }   
+        
+        .card {
+            border: 2px solid white;
+            flex-basis : calc(100% / 4);
+            height: 300px;
+        }        
+
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+
+        sono header
+
+    </header>
+
+    <main>
+
+        <div class="card">
+            card
+        </div>
+
+        <div class="card">
+            card
+        </div>
+        
+        <div class="card">
+            card
+        </div>
+        
+        <div class="card">
+            card
+        </div>
+        
+        <div class="card">
+            card
+        </div>
+
+        <div class="card">
+            card
+        </div>
+        
+        <div class="card">
+            card
+        </div>
+        
+        <div class="card">
+            card
+        </div>
+        
+        <div class="card">
+            card
+        </div>
+
+        <div class="card">
+            card
+        </div>
+        
+        <div class="card">
+            card
+        </div>
+        
+        <div class="card">
+            card
+        </div>        
+
+        <div class="card">
+            card
+        </div>
+
+        <div class="card">
+            card
+        </div>
+        
+        <div class="card">
+            card
+        </div>
+        
+        <div class="card">
+            card
+        </div>        
+
+    </main>
+
+    <footer>
+
+        sono footer
+
+    </footer>    
+
+
+</body>
+
+</html>
